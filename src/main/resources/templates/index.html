@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <!--  Add CSS -->
+    <link th:href="@{/css/app.css}" rel="stylesheet" />
+</head>
+<body class="inner">
+<h1>Spring Webflux + Thymeleaf</h1>
+<p>This is a sample Spring Webflux + Thymeleaf project.</p>
+<h2>List of cities</h2>
+<table>
+    <tr>
+        <td>City</td>
+        <td>Country</td>
+    </tr>
+
+    <!-- Populating data coming from controller -->
+    <tr th:each="city : ${cities}">
+        <td th:text="${city.name}"></td>
+        <td th:text="${city.country}"></td>
+    </tr>
+</table>
+</body>
+</html>
