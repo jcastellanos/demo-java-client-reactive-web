@@ -1,10 +1,10 @@
-package com.jcastellanos.demo.demojavaclientreactiveweb;
+package com.jcastellanos.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoJavaClientReactiveWebApplicationTests {
+class WebApplicationTests {
 
 	@Test
 	void contextLoads() {

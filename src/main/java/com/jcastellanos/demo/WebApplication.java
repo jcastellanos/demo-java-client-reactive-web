@@ -1,13 +1,13 @@
-package com.jcastellanos.demo.demojavaclientreactiveweb;
+package com.jcastellanos.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoJavaClientReactiveWebApplication {
+public class WebApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoJavaClientReactiveWebApplication.class, args);
+		SpringApplication.run(WebApplication.class, args);
 	}
 
 }
