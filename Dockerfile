@@ -8,7 +8,7 @@ LABEL org.opencontainers.image.source https://github.com/jcastellanos/demo-java-
 VOLUME /tmp
 # Installing APM agent
 RUN apk --no-cache add curl
-RUN curl -L "https://search.maven.org/remotecontent?filepath=co/elastic/apm/elastic-apm-agent/1.34.1/elastic-apm-agent-1.34.1.jar" -o /elastic-apm-agent.jar
+RUN curl -L "https://search.maven.org/remotecontent?filepath=co/elastic/apm/elastic-apm-agent/1.45.0/elastic-apm-agent-1.45.0.jar" -o /elastic-apm-agent.jar
 # Copy app
 COPY --from=build /home/gradle/src/build/libs/demo-java-client-reactive-web.jar app.jar
 # Make port 8080 available to the world outside this container
